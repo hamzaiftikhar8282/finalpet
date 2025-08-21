@@ -1,0 +1,127 @@
+/* src/css/anam/adoptionApplications.css */
+.applications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+.applications-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ff4081; /* A vibrant pink tone complementing your logo */
+}
+
+.applications-desc {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.application-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.pet-name {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: #ffe082;
+  color: #856404;
+}
+
+.status.approved {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.status.rejected {
+  background: #ffccbc;
+  color: #bf360c;
+}
+
+.card-body p {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.app-description {
+  font-style: italic;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.action-buttons {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.approve-btn,
+.reject-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.3s;
+}
+
+.approve-btn {
+  background: #ff4081; /* pink tone */
+}
+
+.approve-btn:hover {
+  background: #e73370;
+}
+
+.reject-btn {
+  background: #f44336;
+}
+
+.reject-btn:hover {
+  background: #d32f2f;
+}

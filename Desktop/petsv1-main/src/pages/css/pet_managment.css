@@ -1,0 +1,163 @@
+/* Overall Page */
+.p-6 {
+  padding: 2rem;
+}
+
+.max-w-4xl {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Headings */
+.text-3xl {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+/* Form Styling */
+form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+/* Grid Inputs */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Button */
+button {
+  background-color: #d90429;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #9d0208;
+}
+
+/* Error Text */
+.text-red-500 {
+  color: #d90429;
+  font-size: 0.9rem;
+}
+
+/* Card List */
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+/* Image */
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Text and Labels */
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2b2d42;
+}
+
+.text-green-600 {
+  color: green;
+}
+
+.text-red-600 {
+  color: red;
+}
+
+/* Action Buttons */
+.flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.bg-yellow-500 {
+  background-color: #fbbf24;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.bg-yellow-500:hover {
+  background-color: #eab308;
+}
+
+.bg-red-500:hover {
+  background-color: #dc2626;
+}

@@ -1,0 +1,126 @@
+/* src/css/anam/eventScheduling.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Main container */
+.event-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Centered circular logo */
+.event-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid #fff;
+}
+
+/* Main page title */
+.title {
+  font-size: 2.4rem;
+  color:  white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Event form */
+.event-form {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.event-form h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Input, textarea, and select styling */
+.event-form input,
+.event-form textarea,
+.event-form select {
+  padding: 0.85rem 1.2rem;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.event-form input:focus,
+.event-form textarea:focus,
+.event-form select:focus {
+  border-color: #e63946;
+  outline: none;
+}
+
+/* Select custom arrow */
+.select-input {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23666" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+/* Button styling */
+.publish-btn {
+  background-color: #e63946;
+  color: white;
+  font-size: 1.05rem;
+  padding: 0.85rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.publish-btn:hover {
+  background-color: #d62839;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .event-form {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .event-form h3 {
+    font-size: 1.3rem;
+  }
+
+  .event-logo {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,163 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(90deg, #c70039, #ff416c);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tabs button {
+  padding: 20px 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs .active {
+  background-color: #c70039;
+  color: white;
+  border-color: #c70039;
+}
+
+.tabs button:hover {
+  background-color: #c70039;
+  color: white;
+}
+
+/* Stats Cards */
+.stats-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.card {
+  background-color: white;
+  width: 220px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 36px;
+  color: #c70039;
+  margin: 0;
+}
+
+.card p {
+  margin-top: 5px;
+  color: #6b7280;
+}
+
+/* About */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  padding: 20px 50px;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #c70039;
+}
+
+.about-text p {
+  color: #4b5563;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Table */
+.pet-management {
+  padding: 20px;
+}
+
+.pet-management h2 {
+  margin-bottom: 15px;
+  color: #c70039;
+}
+
+.pet-management table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pet-management th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.pet-management th {
+  background-color: #c70039;
+  color: white;
+}
+
+.pet-management tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.delete-btn {
+  background-color: #c70039;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #a0002d;
+}

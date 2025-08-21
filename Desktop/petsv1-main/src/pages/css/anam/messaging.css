@@ -1,0 +1,154 @@
+/* Layout wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content area */
+.messaging-panel {
+  flex: 1;
+  padding: 2rem;
+}
+
+.panel-title {
+  font-size: 2.4rem; /* increased */
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Chat message container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Single message card */
+.chat-message {
+  background: #fff;
+  padding: 1.2rem 1.8rem; /* increased */
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.chat-message:hover {
+  transform: scale(1.01);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  color: #444;
+  font-size: 1.1rem; /* increased */
+}
+
+.message-content {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.1rem; /* increased */
+}
+
+.message-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+/* Button base style */
+.btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem; /* increased */
+  transition: background-color 0.3s ease;
+}
+
+/* Report button */
+.btn.report {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn.report:hover {
+  background-color: #e0a800;
+}
+
+/* Block button */
+.btn.block {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn.block:hover {
+  background-color: #c82333;
+}
+
+/* No message fallback */
+.empty-state {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  font-size: 1.1rem; /* increased */
+  padding: 2rem 0;
+}
+
+/* ---------------------------- */
+/* 🔽 Responsive Styles Below 🔽 */
+/* ---------------------------- */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .messaging-panel {
+    padding: 1.5rem 1rem;
+  }
+
+  .chat-message {
+    padding: 1rem;
+  }
+
+  .panel-title {
+    font-size: 2rem; /* increased */
+  }
+
+  .message-content {
+    font-size: 1rem;
+  }
+
+  .message-header {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.45rem 1rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .panel-title {
+    font-size: 1.75rem;
+  }
+
+  .message-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .message-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
